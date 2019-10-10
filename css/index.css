@@ -136,6 +136,11 @@ body {
   background-color: oldlace;
   font-family: "Open Sans", sans-serif;
   color: #333333;
+  background: url('../img/background.jpg');
+  background-size: 100%;
+}
+a {
+  transition: all 0.3s ease;
 }
 header {
   font-family: "Open Sans", sans-serif;
@@ -175,8 +180,6 @@ header a:hover {
   display: flex;
   flex-direction: column;
   padding: 7% 10% 7% 10%;
-  background: url('../img/background.jpg') no-repeat;
-  background-size: 100%;
   font-size: 1.3rem;
 }
 .about-me p {
@@ -191,8 +194,6 @@ header a:hover {
 .body-sect {
   display: flex;
   margin: 5% 2% 5% 10%;
-  background: url('../img/background.jpg') no-repeat;
-  background-size: 100%;
 }
 .body-sect .main-cont {
   width: 71%;
