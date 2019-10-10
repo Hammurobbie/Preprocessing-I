@@ -141,16 +141,50 @@ header {
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background: url('../img/me.jpg') no-repeat;
   background-size: 100%;
   padding: 2% 0 2%  10%;
-  height: auto;
+  height: 30%;
 }
 header h1 {
   font-size: 2.75rem;
   color: #333333;
 }
 header h2 {
+  font-size: 1.75rem;
+  color: #e04343;
+}
+header .break {
+  height: 30%;
+}
+header nav {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  text-decoration: none;
+  color: #ffe800;
+  font-size: 1.25rem;
+}
+header a:hover {
+  color: #e04343;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 7% 10% 7% 10%;
+  background: url('../img/background.jpg') no-repeat;
+  background-size: 100%;
+  font-size: 1.3rem;
+}
+.about-me p {
+  font-style: italic;
+  font-weight: lighter;
+  padding-top: 1%;
+}
+.about-me h3 {
   font-size: 1.75rem;
   color: #e04343;
 }
@@ -198,7 +232,6 @@ header h2 {
 }
 .body-sect .sidebar div a:hover {
   color: #e04343;
-  background-color: #ffe800;
 }
 .body-sect h4 {
   font-size: 1.15rem;
@@ -240,4 +273,27 @@ header h2 {
 address {
   text-align: center;
   padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .about-me {
+    padding-top: 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  .break {
+    display: none;
+  }
+  header nav {
+    flex-direction: column;
+    padding-top: 0.2%;
+    padding-right: 3%;
+  }
+  a {
+    text-align: end;
+    padding-bottom: 3%;
+  }
 }
